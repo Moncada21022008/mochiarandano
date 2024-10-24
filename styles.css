@@ -88,18 +88,21 @@ li{
 }
 
 #btn_1{
-    color: #180505;
+    color: #ffffff;
 
 }
 #btn_1:hover{
-    color: #3b3b3b42;
+    color: #000000;
 
 }
 .content-1-text{
     padding-left: 30px;
 }
 .content-1 img{
+    width: 30%; 
+    height: auto; 
     margin-left: auto;
+    margin-right: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 .content-2{
@@ -116,25 +119,37 @@ li{
     margin-left: auto;
 }
 .content-2 img{
+    width: 30%; 
+    height: auto; 
+    margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
-.content-3{
+.content-3 {
     color: #ae00ff;
-    height: auto;
+    height: 100vh; /* Ocupa el 100% de la altura del viewport */
     padding: 30px;
     background-color: #ffffff;
     display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
     border: 2px solid #333; 
     padding: 20px; 
     border-radius: 10px;
 }
-.content-3-text{
-    margin-right: auto;
+
+.content-3-text {
+    margin-top: auto;
+    text-align: center; /* Opcional: Centra el texto y otros elementos */
 }
-.content-3 img{
-    margin-left: auto;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+.content-3 video {
+    display: block;
+    margin: 0 auto;
+}
+.content-3 img {
+    display: block;
+    margin: 0 auto;
 }
 #Mision{
     width: 100%;
@@ -148,6 +163,18 @@ li{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+#contacto{
+    width: 100%;
+    display: block;
+}
+#contacto img{
+    width: 100%;
+}
+#imgcontacto{
+    width: 80%;
+    margin-left: auto;
+    
 }
 @media (max-width:720px){
     h1{
@@ -262,34 +289,61 @@ li{
         margin-right: auto;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     }
-    .content-3{
+    .content-3 {
         color: #ae00ff;
-        height: auto;
+        height: 100vh; /* Ocupa el 100% de la altura del viewport */
         padding: 30px;
         background-color: #ffffff;
         display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center;     /* Centra verticalmente */
         border: 2px solid #333; 
         padding: 20px; 
         border-radius: 10px;
     }
-    .content-3-text{
-        margin-right: auto;
+
+    .content-3-text {
+        margin-top: auto;
+        text-align: center; /* Opcional: Centra el texto y otros elementos */
     }
-    .content-3 img{
-        margin-left: auto;
-        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+    .content-3 video {
+        display: block;
+        margin: 0 auto;
+    }
+    .content-3 img {
+        display: block;
+        margin: 0 auto;
     }
     #Mision{
-        width: 100%;
-        display: block;
+            width: 100%;
+            display: block;
     }
     #Mision img{
-       width: 100%;
-    
+        width: 100%;
+        
     }
     #imgMision{
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
+    #contacto{
+        width: 100%;
+        display: block;
+    }
+    #contacto img{
+        width: 30%; 
+        height: auto; 
+        margin-left: auto;
+        margin-right: auto;
+       
+        
+    }
+    #imgcontacto{
+        width: 80%;
+        margin-left: auto;
+        flex-direction: column;
+    }
+
 }
